@@ -15,6 +15,7 @@ p {
   display: inline-block;
   font-weight: 800;
   margin: 0%;
+  transition: all 0.5s ease-in-out;
 }
 
 .text-string {
@@ -27,35 +28,34 @@ img {
   display: block;
   max-width: 80%;
   border-radius: 5%;
-  transition: all 1.5s ease-in-out;
+  transition: all 1s ease-in-out;
   width: 0%;
 }
 
 i {
-  visibility: hidden;
+  opacity: 0%;
   margin-top: 1%;
-  transition: all 150ms ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 input[type="radio"]:checked + label .selected-img {
   width: 80%;
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
-
+input[type="radio"]:checked + label p {
+  color: black;
+}
 input[type="radio"]:checked + label i {
   transform: rotate(45deg);
 }
 
-input[type="radio"]:checked + label p {
-  color: black;
+input[type="radio"]:active + label .selected-img {
+  opacity: 50%;
+  transition: all 0.5s ease-in-out;
 }
 input[type="radio"]:active + label p {
   color: rgb(69, 69, 241);
-}
-
-.container_imgtext:active img {
-  opacity: 50%;
-  transition: all 0.1ms ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 @media (min-width: 800px) {
@@ -85,10 +85,12 @@ input[type="radio"]:active + label p {
   }
 
   .container-description:hover i {
-    visibility: visible;
+    opacity: 100%;
+    transition: all 1s ease-in-out;
   }
   .container-description:hover p {
     color: black;
+    transition: all 1s ease-in-out;
   }
   .container_imgtext:hover img {
     width: 80%;
