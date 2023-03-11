@@ -48,6 +48,7 @@ i {
     font-size: 1.5em;
   }
 }
+
 @media (min-width: 1200px) {
   p {
     font-size: 3em;
@@ -58,31 +59,31 @@ i {
   i {
     font-size: 2em;
   }
-}
-.container-description:hover {
-  cursor: pointer;
-}
-.container-description:hover i {
-  visibility: visible;
-}
-.container-description:hover p {
-  color: black;
-}
+  label {
+    cursor: pointer;
+  }
 
-.container_imgtext:hover img {
-  width: 80%;
-  transition: all 1.5s ease-in-out;
-}
-.container_imgtext:hover i {
-  transform: rotate(45deg);
-  transition: all 1s ease-in-out;
-}
-.container_imgtext:active p {
-  color: rgb(69, 69, 241);
-}
-.container_imgtext:active img {
-  opacity: 50%;
-  transition: all 0.1ms ease-in-out;
+  .container-description:hover i {
+    visibility: visible;
+  }
+  .container-description:hover p {
+    color: black;
+  }
+  .container_imgtext:hover img {
+    width: 80%;
+    transition: all 1.5s ease-in-out;
+  }
+  .container_imgtext:hover i {
+    transform: rotate(45deg);
+    transition: all 1s ease-in-out;
+  }
+  .container_imgtext:active p {
+    color: rgb(69, 69, 241);
+  }
+  .container_imgtext:active img {
+    opacity: 50%;
+    transition: all 0.1ms ease-in-out;
+  }
 }
 
 input[type="radio"]:checked + label .selected-img {
@@ -92,4 +93,7 @@ input[type="radio"]:checked + label .selected-img {
 
 input[type="radio"]:checked + label .copy_paste_icon {
   transform: rotate(45deg);
+}
+input[type="radio"]:checked + label p {
+  color: black;
 }
