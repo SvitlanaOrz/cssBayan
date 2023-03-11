@@ -34,7 +34,28 @@ img {
 i {
   visibility: hidden;
   margin-top: 1%;
-  transition: all 1.5s ease-in-out;
+  transition: all 150ms ease-in-out;
+}
+
+input[type="radio"]:checked + label .selected-img {
+  width: 80%;
+  transition: all 1s ease-in-out;
+}
+
+input[type="radio"]:checked + label i {
+  transform: rotate(45deg);
+}
+
+input[type="radio"]:checked + label p {
+  color: black;
+}
+input[type="radio"]:active + label p {
+  color: rgb(69, 69, 241);
+}
+
+.container_imgtext:active img {
+  opacity: 50%;
+  transition: all 0.1ms ease-in-out;
 }
 
 @media (min-width: 800px) {
@@ -75,25 +96,6 @@ i {
   }
   .container_imgtext:hover i {
     transform: rotate(45deg);
-    transition: all 1s ease-in-out;
+    transition: all 150ms ease-in-out;
   }
-  .container_imgtext:active p {
-    color: rgb(69, 69, 241);
-  }
-  .container_imgtext:active img {
-    opacity: 50%;
-    transition: all 0.1ms ease-in-out;
-  }
-}
-
-input[type="radio"]:checked + label .selected-img {
-  width: 80%;
-  transition: all 1s ease-in-out;
-}
-
-input[type="radio"]:checked + label .copy_paste_icon {
-  transform: rotate(45deg);
-}
-input[type="radio"]:checked + label p {
-  color: black;
 }
