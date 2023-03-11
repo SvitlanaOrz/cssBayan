@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>cssBayan</title>
+    <script
+      src="https://kit.fontawesome.com/8c32bffa9e.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -12,40 +16,84 @@
       <div class="text-container">
         <h1>cssBayan</h1>
         <hr />
-        <a href="#">You can't just copy and paste css</a>
-        <img
-          src="https://img.freepik.com/free-vector/sloth-being-really-sad_75487-767.jpg?w=1060&t=st=1678458302~exp=1678458902~hmac=979297046156ec99972bf3d8e369eb03cde2d45050116cb1bf99cfbbfd89dcde"
-          alt="copy_paste"
-          class="copy_paste"
-        />
-        <hr />
-        <a href="#">Keep calm and carry on</a>
-        <img
-          src="https://static.vecteezy.com/system/resources/previews/003/834/288/non_2x/keep-calm-and-be-happy-lettering-with-a-sloth-vector.jpg"
-          alt="keep_calm"
-          class="keep_calm"
-        />
 
-        <a href="#">Work-life balance</a>
-        <img
-          src="https://img.freepik.com/premium-vector/flat-cute-cartoon-doodle-sloth-meditation-tropical-jungle-animals-meditate-animals-yoga_214720-1296.jpg?w=2000"
-          alt="work-life"
-          class="work-life"
-        />
-        <hr />
-        <a href="#">Dude, where is JS?</a>
-        <img
-          src="https://static.vecteezy.com/system/resources/previews/008/132/081/original/sloth-cartoon-hanging-on-the-tree-sloth-mascot-cartoon-character-animal-icon-concept-white-isolated-flat-cartoon-style-suitable-for-web-landing-page-banner-flyer-sticker-card-free-vector.jpg"
-          alt="JS"
-          class="JS"
-        />
-        <hr />
-        <a href="#">Relax and take it easy</a>
-        <img
-          src="https://img.freepik.com/premium-vector/cute-sloth-cartoon_1324-322.jpg?w=2000"
-          alt="relax"
-          class="relax"
-        />
+        <div class="container-description">
+          <div class="container_imgtext">
+            <input type="radio" name="elem" id="copy_paste" checked />
+            <label for="copy_paste">
+              <div class="text-string">
+                <p class="copy_paste_text">You can't just copy and paste css</p>
+                <i class="fa-solid fa-plus copy_paste_icon"></i>
+              </div>
+              <img
+                src="https://img.freepik.com/free-vector/sloth-being-really-sad_75487-767.jpg?w=1060&t=st=1678458302~exp=1678458902~hmac=979297046156ec99972bf3d8e369eb03cde2d45050116cb1bf99cfbbfd89dcde"
+                alt="copy_paste"
+                class="selected-img"
+              />
+            </label>
+          </div>
+          <hr />
+          <div class="container_imgtext">
+            <input type="radio" name="elem" id="keep_calm" />
+            <label for="keep_calm">
+              <div class="text-string">
+                <p>Keep calm and carry on</p>
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <img
+                src="https://static.vecteezy.com/system/resources/previews/003/834/288/non_2x/keep-calm-and-be-happy-lettering-with-a-sloth-vector.jpg"
+                alt="keep_calm"
+                class="selected-img"
+              />
+            </label>
+          </div>
+          <hr />
+          <div class="container_imgtext">
+            <input type="radio" name="elem" id="work-life" />
+            <label for="work-life">
+              <div class="text-string">
+                <p>Work-life balance</p>
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <img
+                src="https://img.freepik.com/premium-vector/flat-cute-cartoon-doodle-sloth-meditation-tropical-jungle-animals-meditate-animals-yoga_214720-1296.jpg?w=2000"
+                alt="work-life"
+                class="selected-img"
+              />
+            </label>
+          </div>
+          <hr />
+          <div class="container_imgtext">
+            <input type="radio" name="elem" id="JS" />
+            <label for="JS">
+              <div class="text-string">
+                <p>Dude, where is JS?</p>
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <img
+                src="https://static.vecteezy.com/system/resources/previews/008/132/081/original/sloth-cartoon-hanging-on-the-tree-sloth-mascot-cartoon-character-animal-icon-concept-white-isolated-flat-cartoon-style-suitable-for-web-landing-page-banner-flyer-sticker-card-free-vector.jpg"
+                alt="JS"
+                class="selected-img"
+              />
+            </label>
+          </div>
+          <hr />
+
+          <div class="container_imgtext">
+            <input type="radio" name="elem" id="relax" />
+            <label for="relax">
+              <div class="text-string">
+                <p>Relax and take it easy</p>
+                <i class="fa-solid fa-plus"></i>
+              </div>
+              <img
+                src="https://img.freepik.com/premium-vector/cute-sloth-cartoon_1324-322.jpg?w=2000"
+                alt="relax"
+                class="selected-img"
+              />
+            </label>
+          </div>
+        </div>
       </div>
     </div>
   </body>

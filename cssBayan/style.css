@@ -7,39 +7,89 @@
   margin: 0 auto;
 }
 
-a {
-  text-decoration: none;
+input {
+  display: none;
+}
+p {
   color: rgb(69, 69, 241);
-  display: block;
+  display: inline-block;
   font-weight: 800;
+  margin: 0%;
+}
+
+.text-string {
+  display: flex;
+  justify-content: space-between;
 }
 
 img {
-  margin: 5% auto;
+  margin: 1% auto;
   display: block;
   max-width: 80%;
+  border-radius: 5%;
+  transition: all 1.5s ease-in-out;
+  width: 0%;
 }
 
-@media (min-width: 820px) {
-  a {
+i {
+  visibility: hidden;
+  margin-top: 1%;
+  transition: all 1.5s ease-in-out;
+}
+
+@media (min-width: 800px) {
+  p {
     font-size: 2em;
   }
   h1 {
     font-size: 3em;
   }
+  i {
+    font-size: 1.5em;
+  }
 }
-@media (min-width: 1920px) {
-  a {
+@media (min-width: 1200px) {
+  p {
     font-size: 3em;
   }
   h1 {
     font-size: 4em;
   }
+  i {
+    font-size: 2em;
+  }
+}
+.container-description:hover {
+  cursor: pointer;
+}
+.container-description:hover i {
+  visibility: visible;
+}
+.container-description:hover p {
+  color: black;
 }
 
-/* .copy_paste,
-.keep_calm,
-.work-life,
-.JS,
-.relax 
-  */
+.container_imgtext:hover img {
+  width: 80%;
+  transition: all 1.5s ease-in-out;
+}
+.container_imgtext:hover i {
+  transform: rotate(45deg);
+  transition: all 1s ease-in-out;
+}
+.container_imgtext:active p {
+  color: rgb(69, 69, 241);
+}
+.container_imgtext:active img {
+  opacity: 50%;
+  transition: all 0.1ms ease-in-out;
+}
+
+input[type="radio"]:checked + label .selected-img {
+  width: 80%;
+  transition: all 1s ease-in-out;
+}
+
+input[type="radio"]:checked + label .copy_paste_icon {
+  transform: rotate(45deg);
+}
