@@ -80,9 +80,6 @@ input[type="radio"]:active + label p {
   i {
     font-size: 2em;
   }
-  label {
-    cursor: pointer;
-  }
 }
 
 @media ((hover: hover)) {
@@ -101,5 +98,8 @@ input[type="radio"]:active + label p {
   .container_imgtext:hover i {
     transform: rotate(45deg);
     transition: all 150ms ease-in-out;
+  }
+  label {
+    cursor: pointer;
   }
 }
