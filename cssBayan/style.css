@@ -83,7 +83,9 @@ input[type="radio"]:active + label p {
   label {
     cursor: pointer;
   }
+}
 
+@media ((hover: hover)) {
   .container-description:hover i {
     opacity: 100%;
     transition: all 1s ease-in-out;
